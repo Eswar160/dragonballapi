@@ -2,7 +2,7 @@ const container = document.getElementById("container");
 let images = [];
 
 const dragonball = async () => {
-  const response = await fetch("https://dragonball-api.com/api/characters");
+  const response = await fetch("https://dragonball-api.com/api/characters?limit=58");
   const data = await response.json();
   images = data.items;
   console.log(data);
